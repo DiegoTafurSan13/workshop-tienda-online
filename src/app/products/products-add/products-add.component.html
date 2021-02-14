@@ -1,0 +1,31 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>New Add Product</mat-card-title>
+        </mat-card-header>
+        <img matCardImage [src]="thumbImage">
+        <mat-card-content>
+            <form [formGroup] = "form">
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Title" formControlName = "title">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Brand" formControlName = "brand">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Price" formControlName = "price">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Sale Price" formControlName = "salePrice">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Thumb Image Url" formControlName = "thumbImage">
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions >
+            <button mat-raised-button (click)="submit()" color = "primary">{{buttonMsm}}</button>
+            <button mat-raised-button (click)="cancel()" color = "warn">Cancel</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <mat-card *ngFor="let item of products">
+        <mat-card-header>
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle>{{item.brand}}</mat-card-subtitle>
+        </mat-card-header>
+        <img matCardImage [src]="item.thumbImage" *ngIf="item.thumbImage">
+        <mat-card-content>
+            <p>{{ item.price | currency }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-icon-button [routerLink] = "['/products/add',item.id]">Edit</button>
+            <button mat-icon-button (click)="delete(item.id)">Delete</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

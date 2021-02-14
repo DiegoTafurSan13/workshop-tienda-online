@@ -1,0 +1,14 @@
+<mat-toolbar color = "primary">
+    <span>Store Wish App</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="mat-18">more_vert</mat-icon>
+    </button>
+    
+    <mat-menu #menu>
+        <button mat-menu-item [routerLink] = "['/products/add',0]">
+            <mat-icon class="mat-18">add_circle</mat-icon>
+            <span>Add Product</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>

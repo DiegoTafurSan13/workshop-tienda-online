@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+img{
+    width: 210px;
+    height: 210px;
+    margin: auto;
+    object-fit: cover;
+}
+mat-card,form{
+    box-shadow: none !important;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+}
+mat-card-header,mat-card-actions{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+mat-card{
+    width: 210px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 16px;
+}
